@@ -1,0 +1,23 @@
+<%= render 'static_pages/header' %>
+
+<div id="new-form">
+  
+  <h1>New Post</h1>
+  
+  <%= simple_form_for :posts, url: posts_path do |f| %>
+  
+    <%= f.input :title, label: 'Title' %>
+    
+    <%= f.input :author %>
+    
+    <%= f.input :body, as: 'text' %>
+    
+    <%= f.button :submit %>
+    
+    <%#= f.button :button, "Cancel", link_to: 'posts/index' %>
+    
+    <%= f.button :submit, "Cancel" %>
+  
+    
+  <% end %>
+</div>

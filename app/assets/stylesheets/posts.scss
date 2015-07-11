@@ -1,0 +1,24 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#posts {
+  padding-left: 30px;
+  width: 50%;
+  float: left;
+}
+
+#new {
+  float:right; 
+  padding-right: 30px;
+}
+
+#new-form {
+  width: 80%;
+  padding-left: 30px;
+}
+
+#post-actions {
+  padding-top: 10px;
+  padding-left: 10px;
+}
