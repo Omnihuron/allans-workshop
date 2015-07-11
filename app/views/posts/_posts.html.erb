@@ -1,0 +1,30 @@
+<div id="posts">
+  <h1>Posts</h1>
+  <hr>
+  <% @posts.each do |post| %>
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <!-- <img class="media-object" src=  alt="Author of post"> -->
+          <%= image_tag("pug.jpg", class: "media-object") %>
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"><%= "#{post.author}: #{post.title}" %></h4>
+          <%= post.body %>
+      </div>
+      <div id="post-actions" class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default">Edit</button>
+        <button type="button" class="btn btn-default">Save</button>
+        <button type="button" class="btn btn-default">Delete</button>
+      </div>
+    </div>
+    <hr>
+  <% end %>
+</div>
+
+<div id="new">
+    
+  <p><a class="btn btn-primary btn-lg" href="/posts/new" role="button">New Post</a></p>
+    
+</div>
